@@ -4,7 +4,7 @@ import java.util.logging.Level
 import java.util.logging.Logger
 
 /**
- * Created by nickgrealy@gmail.com on 19/09/2015.
+ * Created by marky.r.jackson@gmail.com on 19/08/2019.
  */
 class LoggerTrap extends Logger {
 

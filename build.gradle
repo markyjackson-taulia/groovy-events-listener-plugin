@@ -79,9 +79,9 @@ jenkinsPlugin {
     maskClasses = 'groovy.grape'
     developers {
         developer {
-            id 'nickg'
-            name 'Nick Grealy'
-            email 'nickgrealy@gmail.com'
+            id 'jequals5'
+            name 'Marky Jackson'
+            email 'marky.r.jackson@gmail.com'
         }
     }
 }

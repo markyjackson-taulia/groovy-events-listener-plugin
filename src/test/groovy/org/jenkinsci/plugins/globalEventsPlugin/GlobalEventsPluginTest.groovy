@@ -15,7 +15,7 @@ import net.sf.json.JSONObject
 import static groovy.test.GroovyAssert.shouldFail
 
 /**
- * Created by nickgrealy@gmail.com.
+ * Created by marky.r.jackson@gmail.com.
  */
 class GlobalEventsPluginTest {
 
