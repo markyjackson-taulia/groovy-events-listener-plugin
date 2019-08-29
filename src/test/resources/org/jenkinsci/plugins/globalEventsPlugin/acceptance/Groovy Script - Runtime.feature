@@ -1,6 +1,6 @@
 Feature: Groovy Script - Runtime
   As a developer
-  I want to be able to execute my groovy script
+  I want to be able to execute my Groovy script
   So that I can have an action performed
 
 
@@ -39,6 +39,12 @@ Feature: Groovy Script - Runtime
       | Queue.onEnterBlocked          | actEvent | -> QueueListener.onEnterBlocked          |
       | Queue.onEnterBuildable        | actEvent | -> QueueListener.onEnterBuildable        |
       | Queue.onLeft                  | actEvent | -> QueueListener.onLeft                  |
+      | Item.onUpdated                | actEvent | -> ItemListener.onUpdated                |
+      | Item.onLocationChanged        | actEvent | -> ItemListener.onLocationChanged        |
+      | Item.onRenamed                | actEvent | -> ItemListener.onRenamed                |
+      | Item.onDeleted                | actEvent | -> ItemListener.onDeleted                |
+      | Item.onCopied                 | actEvent | -> ItemListener.onCopied                 |
+      | Item.onCreated                | actEvent | -> ItemListener.onCreated                |
 
 
   Scenario: The plugin's package should be imported by default, so that I can make use of the 'Event' convenience class
@@ -84,7 +90,7 @@ Feature: Groovy Script - Runtime
     Then the log level info should display 'wslite.soap.SOAPClient'
 
 
-    @wip
+  @wip
   Scenario: The script should have access to the Ivy ResolveReport class, So that @Grab works
     Given the script
     """
